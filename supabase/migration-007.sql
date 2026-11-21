@@ -1,0 +1,1 @@
+-- Миграция 007 (уже применена): таблица master_media (cert / win / photo), не более 10 фото мастера (триггер master_media_limit).

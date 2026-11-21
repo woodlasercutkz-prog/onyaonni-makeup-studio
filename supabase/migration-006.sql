@@ -1,0 +1,4 @@
+-- Миграция 006 (уже применена): блок «О мастере», промокод и бонусный счёт, удаление клиентов.
+-- settings: master_name, master_about, master_photo, welcome_bonus, promo_code. profiles: bonus. Таблица bonus_log.
+-- bookings: use_bonus, bonus_used (триггеры bookings_price и bookings_refund). register_profile(..., p_promo).
+-- Функции adjust_bonus(user, delta) и delete_client(user) доступны только мастеру.
